@@ -1,8 +1,16 @@
 extends ../layout.pug
 
 block content
-    h1 Testing
-    .container
+    h1 Fan Controls
+    .container.fan(data-id="0")
         .row
-            .col-sm-6 50%
-            .col-sm-6 50%
+            .col-sm-6.name 
+                h2 Fan Name
+        .row
+            .col-sm-6
+                .button-group
+                    button.secondary Off
+                    button.primary Light
+                    button Low
+                    button Med
+                    button High
